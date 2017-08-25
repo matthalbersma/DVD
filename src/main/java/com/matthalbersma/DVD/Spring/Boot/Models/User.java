@@ -1,15 +1,13 @@
-package Models;
+package com.matthalbersma.DVD.Spring.Boot.Models;
 
 import org.hibernate.validator.constraints.Email;
 
 import java.util.List;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
 
 import lombok.Data;
 
@@ -28,8 +26,8 @@ public class User {
     private String lastName;
     @Email
     private String email;
-    @ManyToMany
-    private List<Roles> roles;
+//    @ManyToMany
+//    private List<Roles> roles;
     private String password;
 
 
